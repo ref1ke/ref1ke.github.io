@@ -38,7 +38,7 @@ a:active{
     margin: auto;
 }
 
-.card{
+.card {
     padding: 15px 20px;
     margin-bottom: 20px;
     border-radius: 25px;
@@ -52,5 +52,21 @@ a:active{
     background: rgb(182, 182, 255);
 }
 
-
-
+.card h2 {
+    text-align: center;
+}
+ .card2 {
+    padding: 10px;
+    border-radius: 25px;
+    
+ }
+ .bg-gr {
+    background-color: rgb(203, 255, 125);
+ }
+ .channel {
+padding: 10px;
+border-radius: 25px;
+ }
+ .bg-re {
+    background-color: rgb(239, 84, 84);
+ }
