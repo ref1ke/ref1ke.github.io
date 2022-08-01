@@ -23,6 +23,8 @@ function fillTable(divId, films) {
 
         a.href = `http://hdrezka.co/films/${film[0]}.html`
         a.innerText = film[1]
+        a.target = '_blank'
+        a.rel = 'noopener noreferrer'
 
         th1.innerText = i
         th3.innerText = film[0].split('-').at(-1)
