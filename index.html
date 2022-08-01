@@ -1,75 +1,211 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>test page</title>
+		<title>Marvel Films</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="./huita.js"></script>
 	</head>
 
 	<body>
-		<div class="ldr">
-			<h1 style="text-align: center; color: rgb(63, 63, 63); text-decoration: underline;">
-				<em>Hello User</em>
-			</h1>
+		<script>
+			window.onload = function () {
+				fillTable('table-container', [
+					[
+						'fiction/50385-chernaya-pantera-vakanda-navsegda-2022',
+						'Чёрная Пантера: Ваканда навсегда',
+					],
+					['fantasy/48332-tor-lyubov-i-grom-2022', 'Тор: Любовь и гром'],
+					[
+						'fiction/45231-doktor-strendzh-v-multivselennoy-bezumiya-2022',
+						'Доктор Стрэндж: В мультивселенной безумия',
+					],
+					[
+						'fiction/41486-chelovek-pauk-net-puti-domoy-2021',
+						'Человек-паук: Нет пути домой',
+					],
+					['fiction/41484-vechnye-2021', 'Вечные'],
+					['action/39774-chernaya-vdova-2021', 'Чёрная Вдова'],
+					[
+						'action/31377-chelovek-pauk-vdali-ot-doma-2019',
+						'Человек-паук: Вдали от дома',
+					],
+					['fiction/30651-mstiteli-final-2019', 'Мстители: Финал'],
+					['fiction/30219-kapitan-marvel-2019', 'Капитан Марвел'],
+					['action/28155-chelovek-muravey-i-osa-2018', 'Человек-муравей и Оса'],
+					[
+						'fiction/27480-mstiteli-voyna-beskonechnosti-2018',
+						'Мстители: Война бесконечности',
+					],
+					['fiction/26605-chernaya-pantera-2018', 'Чёрная Пантера'],
+					['action/25923-tor-ragnarek-2017', 'Тор: Рагнарёк'],
+					[
+						'fiction/23757-chelovek-pauk-vozvraschenie-domoy-2017',
+						'Человек-паук: Возвращение домой',
+					],
+					['fiction/22867-strazhi-galaktiki-2-2017', 'Стражи Галактики 2'],
+					['fantasy/12891-doktor-strendzh-2016', 'Доктор Стрэндж'],
+					[
+						'fiction/12251-pervyy-mstitel-protivostoyanie-2016',
+						'Первый мститель: Противостояние',
+					],
+					['fiction/10735-chelovek-muravey-2015', 'Человек-муравей'],
+					['fiction/9316-mstiteli-era-altrona-2015', 'Мстители: Эра Альтрона'],
+					['fiction/2031-strazhi-galaktiki-2014', 'Стражи Галактики'],
+					[
+						'fiction/1603-pervyy-mstitel-drugaya-voyna-2014',
+						'Первый мститель: Другая война',
+					],
+					['fantasy/1036-tor-2-carstvo-tmy-2013', 'Тор 2: Царство тьмы'],
+					['fiction/343-zheleznyy-chelovek-3-2013', 'Железный человек 3'],
+					['fantasy/169-mstiteli-2012', 'Мстители'],
+					['fiction/530-pervyy-mstitel-2011', 'Первый мститель'],
+					['action/243-zheleznyy-chelovek-2-2010', 'Железный человек 2'],
+					['action/754-neveroyatnyy-halk-2008', 'Невероятный Халк'],
+					['action/242-zheleznyy-chelovek-2008', 'Железный человек'],
+				])
+			}
+		</script>
+		<div id="table-container"></div>
+		
 
-			<br />
+		<!--<table border="2">
+			<tr>
+				<th>№</th>
+				<th>Фильм</th>
+				<th>Год</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><a href="http://hdrezka.co/films/action/242-zheleznyy-chelovek-2008.html">Железный человек</a></td>
+				<td>2008</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><a href="http://hdrezka.co/films/action/754-neveroyatnyy-halk-2008.html">Невероятный халк</a></td>
+				<td>2008</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><a href="http://hdrezka.co/films/action/243-zheleznyy-chelovek-2-2010.html">Железный человек 2</a></td>
+				<td>2010</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><a href="http://hdrezka.co/films/fantasy/88-tor-2011.html">Тор</a></td>
+				<td>2011</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><a href="http://hdrezka.co/films/fiction/530-pervyy-mstitel-2011.html">Первый мститель</a></td>
+				<td>2011</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><a href="http://hdrezka.co/films/fantasy/169-mstiteli-2012.html">Мстители</a></td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><a href="http://hdrezka.co/films/fiction/343-zheleznyy-chelovek-3-2013.html">Железный человек 3</a></td>
+				<td>2013</td>
+			</tr>
 
-			<div class="cr bg-ye">
-				<h2>Это второй мой сайт</h2>
-				<p>В этом сайте, в отличии от первого, я буду применять css</p>
-			</div>
+			<tr>
+				<td>8</td>
+				<td><a href="http://hdrezka.co/films/fantasy/1036-tor-2-carstvo-tmy-2013.html">Тор 2: Царство тьмы</a></td>
+				<td>2013</td>
+			</tr>
 
-			<br />
-				<div class="card">
-					<div class="card1 bg-bl">
-						<p>Дни недели на немецком:</p>
-					</div>
+			<tr>
+				<td>9</td>
+				<td><a href="http://hdrezka.co/films/fiction/1603-pervyy-mstitel-drugaya-voyna-2014.html">Первый мститель: Другая война</a></td>
+				<td>2014</td>
+			</tr>
 
-						<div class="card2 bg-gr">
+			<tr>
+				<td>10</td>
+				<td><a href="http://hdrezka.co/films/fiction/2031-strazhi-galaktiki-2014.html">Стражи галактики</a></td>
+				<td>2014</td>
+			</tr>
 
-							<ul type="square">
-								<li>Montag</li>
-								<li>Dienstag</li>
-								<li>Mittwoch</li>
-								<li>Donnerstag</li>
-								<li>freitag</li>
-								<li>Samstag</li>
-								<li>Sonntag</li>
-							</ul>
+			<tr>
+				<td>11</td>
+				<td><a href="http://hdrezka.co/films/fiction/9316-mstiteli-era-altrona-2015.html">Мстители: Эра Альтрона</a></td>
+				<td>2015</td>
+			</tr>
 
-							<br>
+			<tr>
+				<td>12</td>
+				<td><a href="http://hdrezka.co/films/fiction/10735-chelovek-muravey-2015.html">Человек-муравей</a></td>
+				<td>2015</td>
+			</tr>
 
-							<ol>
-								<li>Montag</li>
-								<li>Dienstag</li>
-								<li>Mittwoch</li>
-								<li>Donnerstag</li>
-								<li>Freitag</li>
-								<li>Samstag</li>
-								<li>Sonntag</li>
-							</ol>
-						</div>
-				</div>
-			
+			<tr>
+				<td>13</td>
+				<td><a href=""></a></td>
+				<td>2016</td>
+			</tr>
 
-			<br />
+			<tr>
+				<td>14</td>
+				<td><a href=""></a></td>
+				<td>2017</td>
+			</tr>
 
-			<div class="imgp">
-				<h2 style="text-align: center; color: rgb(63,63,63);">Рандомная картинка</h2>
-				<p style="text-decoration:line-through; text-align: center;">Это не кактус</p>
+			<tr>
+				<td>15</td>
+				<td><a href=""></a></td>
+				<td>2017</td>
+			</tr>
 
-				<img src="Kaktus_miks.jpeg" width="200" class="ks" />
-				
-				<br />
-				<br />
+			<tr>
+				<td>16</td>
+				<td><a href=""></a></td>
+				<td>2017</td>
+			</tr>
 
-				<div class="channel bg-re">
-					<h2 style="color: black; text-align: center;">Просто канал</h2>
-					<a href="https://www.youtube.com/channel/UCp612nMAHO497k1WNC3EfHg"
-						target="_blank">
-						CS GO NEWS 2.0
-					</a>
-				</div>
-			</div>
-		</div>
+			<tr>
+				<td>17</td>
+				<td><a href=""></a></td>
+				<td>2018</td>
+			</tr>
+
+			<tr>
+				<td>18</td>
+				<td><a href=""></a></td>
+				<td>2018</td>
+			</tr>
+
+			<tr>
+				<td>19</td>
+				<td><a href=""></a></td>
+				<td>2018</td>
+			</tr>
+
+			<tr>
+				<td>20</td>
+				<td><a href=""></a></td>
+				<td>2019</td>
+			</tr>
+
+			<tr>
+				<td>21</td>
+				<td><a href=""></a></td>
+				<td>2019</td>
+			</tr>
+
+			<tr>
+				<td>22</td>
+				<td><a href=""></a></td>
+				<td>2019</td>
+			</tr>
+
+			<tr>
+				<td>23</td>
+				<td><a href=""></a></td>
+				<td>2019</td>
+			</tr>
+		</table>
+	-->
 	</body>
 </html>
